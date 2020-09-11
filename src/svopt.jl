@@ -13,8 +13,6 @@ function optfun(f, a, b; ϵ=1e-5)
     w2 = fw2(a, b)
 
     while abs(b - a) > ϵ
-        # println(a, " ", b, " w1: ", w1, " w2: ", w2)
-        # println(f(w1), "<", f(w2))
         if f(w1) < f(w2)
             b = w2
             w2 = w1
